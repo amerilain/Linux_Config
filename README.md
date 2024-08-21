@@ -43,7 +43,7 @@ sudo apt update
 sudo apt upgrade
 ```
 
-##3. **Install Clang**:
+## 3. **Install Clang**:
     ```bash
     sudo apt install clang
     ```
