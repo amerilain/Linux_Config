@@ -1,14 +1,52 @@
-# Steps for Installing Virtual Machine
+# Embedded Linux Setup and Configuration
 
-These are the steps I followed:
+## Introduction
 
-1. From [this link](https://cdimage.ubuntu.com/jammy/daily-live/current/), I installed the 64-bit ARM desktop image. I used UTM and installed the ISO. I had some trouble with this, but after what I thought was a loaded image, I had to find the icon on my Linux desktop and load it from there. I then cleared the ISO image and restarted.
+This document details the steps I followed to set up a development environment for Embedded Linux, specifically for using Yocto to create Linux images. The setup was performed on an Ubuntu virtual machine (VM) using UTM, with a focus on configuring the terminal environment, installing essential tools, and creating a shell script for network information retrieval.
 
-2. **Update and upgrade**:
-    ```bash
-    sudo apt update
-    sudo apt upgrade
-    ```
+## Prerequisites
+
+- UTM installed on your system
+- Ubuntu 22.04 LTS ISO image (64-bit ARM desktop image)
+
+## 1. Virtual Machine Setup
+
+### 1.1. Download and Install Ubuntu
+
+1. **Download the Ubuntu ISO**:
+   - URL: [Ubuntu 64-bit ARM desktop image](https://cdimage.ubuntu.com/jammy/daily-live/current/)
+
+2. **Install the ISO using UTM**:
+   - Create a new virtual machine in UTM.
+   - Load the ISO image and follow the installation process.
+   - After installation, clear the ISO image and restart the VM.
+
+   _**[Include a screenshot of the UTM setup window here]**_
+
+### 1.2. Configure the VM
+
+1. **Allocate Resources**:
+   - Allocate a minimum of 4GB RAM and 2 CPU cores.
+   - Set up a virtual hard disk with at least 100GB of space.
+
+   _**[Include a screenshot of the resource allocation here]**_
+
+2. **Configure Display and System Settings**:
+   - Maximize video memory and enable 3D acceleration.
+   - Set the pointing device to "USB Tablet."
+
+   _**[Include a screenshot of the display and system settings here]**_
+
+## 2. System Update and Package Installation
+
+### 2.1. Update and Upgrade the System
+
+Run the following commands to update and upgrade your system:
+
+```bash
+sudo apt update
+sudo apt upgrade
+```
 
 3. **Install Clang**:
     ```bash
