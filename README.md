@@ -2,11 +2,11 @@
 
 ## Introduction
 
-This document details the steps I followed to set up a development environment for Embedded Linux, specifically for using Yocto to create Linux images. The setup was performed on an Ubuntu virtual machine (VM) using UTM, with a focus on configuring the terminal environment, installing essential tools, and creating a shell script for network information retrieval.
+This document details the steps to set up a development environment for Embedded Linux. The setup was performed on an Ubuntu virtual machine (VM) using UTM, with a focus on configuring the terminal environment, installing essential tools, and creating a shell script for retrieving  network information.
 
 ## Prerequisites
 
-- UTM installed on your system
+- UTM installed
 - Ubuntu 22.04 LTS ISO image (64-bit ARM desktop image)
 
 ## 1. Virtual Machine Setup
@@ -21,21 +21,16 @@ This document details the steps I followed to set up a development environment f
    - Load the ISO image and follow the installation process.
    - After installation, clear the ISO image and restart the VM.
 
-   _**[Include a screenshot of the UTM setup window here]**_
-
 ### 1.2. Configure the VM
 
 1. **Allocate Resources**:
    - Allocate a minimum of 4GB RAM and 2 CPU cores.
    - Set up a virtual hard disk with at least 100GB of space.
 
-   _**[Include a screenshot of the resource allocation here]**_
-
 2. **Configure Display and System Settings**:
    - Maximize video memory and enable 3D acceleration.
    - Set the pointing device to "USB Tablet."
-
-   _**[Include a screenshot of the display and system settings here]**_
+   - Note: these instructions were for VirtualBox and since UTM does not have the same flexibility, these steps were not done.
 
 ## 2. System Update and Package Installation
 
@@ -80,6 +75,7 @@ sudo apt upgrade
     ```bash
     sudo apt install git
     ```
+    Steps 7 & 8 were done in order to complete the following steps.
 
 9. **Install Oh My Zsh**:
     ```bash
