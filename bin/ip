@@ -1,0 +1,17 @@
+#!/bin/bash
+
+ifconfig_output=$(ifconfig | grep -A 1 'inet ' | grep -v 'inet6' | grep -v '127.0.0.1')
+
+if [ "$1" == "-v" ]; then
+    echo "$ifconfig_output" | while read -r line1; do
+        ip=$(echo "$line1" | awk '{print $2}')
+        netmask=$(echo "$line1" | awk '{print $4}')
+        broadcast=$(echo "$line1" | awk '{print $6}')
+        
+        if [ -n "$ip" ]; then
+            echo "inet $ip netmask $netmask broadcast $broadcast"
+        fi
+    done
+else
+    echo "$ifconfig_output" | awk '{print $2}' | grep -v '^$'
+fi
