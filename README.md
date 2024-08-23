@@ -1,8 +1,8 @@
-# Embedded Linux Setup and Configuration
+# Managing Linux with the Embedded Perspective: Linux Setup
 
 ## Introduction
 
-This document details the steps to set up a development environment for Embedded Linux. The setup was performed on an Ubuntu virtual machine (VM) using UTM, with a focus on configuring the terminal environment, installing essential tools, and creating a shell script for retrieving  network information.
+This document details the steps to set up a development environment for Embedded Linux. The setup was performed on an Ubuntu virtual machine using UTM, with a focus on configuring the terminal environment, installing essential tools, and creating a shell script for retrieving network information.
 
 ## Prerequisites
 
@@ -12,6 +12,8 @@ This document details the steps to set up a development environment for Embedded
 ## 1. Virtual Machine Setup
 
 ### 1.1. Download and Install Ubuntu
+
+ - Because I use a Mac M2 machine, I need to install a ARM based image
 
 1. **Download the Ubuntu ISO**:
    - URL: [Ubuntu 64-bit ARM desktop image](https://cdimage.ubuntu.com/jammy/daily-live/current/)
