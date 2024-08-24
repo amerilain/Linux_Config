@@ -46,9 +46,9 @@ sudo apt upgrade
 ```
 
 ## 3. **Install Clang**:
-    ```bash
-    sudo apt install clang
-    ```
+```bash
+sudo apt install clang
+```
 
 ## 4. **Install GCC**:
     ```bash
