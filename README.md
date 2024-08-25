@@ -117,7 +117,7 @@ plugins=(git zsh-syntax-highlighting)
 - Apply the changes:
 ```bash
 source ~/.zshrc
-      ```
+```
 
 ## 14. **Install NeoVim**:
 ```bash
