@@ -51,10 +51,10 @@ sudo apt install clang
 ```
 
 ## 4. **Install GCC**:
-    ```bash
-    sudo apt install gcc g++
-    ```
-    I installed both Clang and GCC for more flexibility down the road if needed.
+```bash
+sudo apt install gcc g++
+```
+I installed both Clang and GCC for more flexibility down the road if needed.
 
 ## 5. **Install Zsh**:
     ```bash
